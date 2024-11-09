@@ -1,7 +1,7 @@
 import express from "express";
 import dotenv from "dotenv";
 import { connectDB, sequelize } from "./config/db.js";
-import authRoutes from "./routes/auth.js";
+import mainRoutes from "./routes/gymRoutes.js";
 
 dotenv.config();
 const app = express();
@@ -13,7 +13,7 @@ connectDB();
 app.use(express.json());
 
 // Routing
-app.use("/api/auth", authRoutes);
+app.use("/programs", mainRoutes);
 
 // Mulai server dan sinkronisasi model
 const PORT = process.env.PORT || 3000;
