@@ -5,21 +5,22 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <nav className="flex justify-between h-auto bg-black align-middle text-white">
-      <div className="ml-9 my-3 ">
+    <nav className="flex justify-between h-auto font-libre bg-[#343131] align-middle text-white">
+      <div className="ml-9 my-3 flex justify-center w-auto items-center">
         <CgGym className="size-12" />
+        <h1 className="font-libre text-3xl ml-2">FitFlex</h1>
       </div>
 
       <div className="h-auto mr-9 flex my-3">
         <div>
-          <ul className="w-auto  rounded-lg border-2 border-red-900  py-3 px-2 shadow-md mr-3">
+          <ul className="w-auto  rounded-lg border-2 border-[#A04747]  py-3 px-2 shadow-md mr-3">
             <li>
               <a href="#">Home</a>
             </li>
           </ul>
         </div>
         <div className="relative w-[100%] group">
-          <button className="  flex justify-between rounded-lg border-2 border-red-900 w-52 py-3 px-2 shadow-md">
+          <button className="  flex justify-between rounded-lg border-2 border-[#A04747] w-52 py-3 px-2 shadow-md">
             Set your day
             <RiArrowDropDownLine className="fill-current h-6 w-6" />
           </button>
