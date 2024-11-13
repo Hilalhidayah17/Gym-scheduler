@@ -1,12 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../components/navbar";
 import Squat from "../assets/Squat.gif";
 import InclineChess from "../assets/incline_chess_press.gif";
 import OverHeadPress from "../assets/overhead_press.gif";
 import LatPull from "../assets/MAG_LAT_PULL_DOWN.gif";
 import Dips from "../assets/Dips.gif";
+import SquatModal from "../components/seeMore/SquatModal.jsx";
+import { InclineBarblePress } from "../components/seeMore/InclineBarblePress.jsx";
+import { DumblePress } from "../components/seeMore/DumblePress.jsx";
+import { LatPullDown } from "../components/seeMore/LatPullDown.jsx";
+import { ChestDips } from "../components/seeMore/Dips.jsx";
 
 export const DayOne = () => {
+  const [showSquatModal, setShowSquatModal] = useState(false);
+  const [showInclinePressModal, setShowInclinePressModal] = useState(false);
+  const [showDumblePressModal, setShowDumblePressModal] = useState(false);
+  const [showLatPullDownModal, setShowLatPullDownModal] = useState(false);
+  const [showDipsModal, setShowDipsModal] = useState(false);
+
   return (
     <div className="h-[100vh] ">
       <Navbar />
@@ -20,7 +31,9 @@ export const DayOne = () => {
             />
           </div>
           <div className="max-w-md">
-            <h2 className="text-2xl font-bold mb-2">BARBELL SQUAT</h2>
+            <h2 className="text-2xl font-bold mb-2">
+              BARBELL SQUAT (3 x 8-12)
+            </h2>
             <p className="text-gray-700">
               The barbell squat is a strength training exercise that targets the
               muscles of the lower body, particularly the quadriceps,
@@ -29,7 +42,16 @@ export const DayOne = () => {
               performed using a barbell, which is a long, straight bar that is
               weighted with plates.
             </p>
+            <button
+              className="py-1 px-3 bg-[#A04747] text-white rounded-full my-3 "
+              onClick={() => setShowSquatModal(true)}
+            >
+              See More
+            </button>
           </div>
+          {showSquatModal && (
+            <SquatModal onClose={() => setShowSquatModal(false)} />
+          )}
         </div>
         <div className="flex flex-nowrap items-center gap-6 flex-row-reverse">
           <div className="border-gray-300 border-2 rounded-xl overflow-hidden flex-shrink-0 my-3">
@@ -41,7 +63,7 @@ export const DayOne = () => {
           </div>
           <div className="max-w-md">
             <h2 className="text-2xl font-bold mb-2">
-              Incline Barbell Bench Press
+              Incline Barbell Bench Press (3 x 8-12)
             </h2>
             <p className="text-gray-700">
               The incline bench press is a compound exercise that primarily
@@ -49,7 +71,18 @@ export const DayOne = () => {
               shoulders and triceps. The movement is typically performed on an
               incline bench raised at an angle of about 30 to 45 degrees.
             </p>
+            <button
+              className="py-1 px-3 bg-[#A04747] text-white rounded-full my-3 "
+              onClick={() => setShowInclinePressModal(true)}
+            >
+              See More
+            </button>
           </div>
+          {showInclinePressModal && (
+            <InclineBarblePress
+              onClose={() => setShowInclinePressModal(false)}
+            />
+          )}
         </div>
         <div className="flex flex-nowrap items-center gap-6 ">
           <div className="border-gray-300 border-2 rounded-xl overflow-hidden flex-shrink-0 my-3">
@@ -60,7 +93,9 @@ export const DayOne = () => {
             />
           </div>
           <div className="max-w-md">
-            <h2 className="text-2xl font-bold mb-2">Dumbbell Shoulder Press</h2>
+            <h2 className="text-2xl font-bold mb-2">
+              Dumbbell Shoulder Press (3 x 8-12)
+            </h2>
             <p className="text-gray-700">
               The dumbbell shoulder press, also known as the dumbbell overhead
               press, is an exercise that targets the muscles of the shoulders
@@ -74,7 +109,16 @@ export const DayOne = () => {
               and can be used in various settings, including home workouts and
               gym environments.
             </p>
+            <button
+              className="py-1 px-3 bg-[#A04747] text-white rounded-full my-3 "
+              onClick={() => setShowDumblePressModal(true)}
+            >
+              See More
+            </button>
           </div>
+          {showDumblePressModal && (
+            <DumblePress onClose={() => setShowDumblePressModal(false)} />
+          )}
         </div>
         <div className="flex flex-nowrap items-center gap-6 flex-row-reverse mt-6">
           <div className="border-gray-300 border-2 rounded-xl overflow-hidden flex-shrink-0 my-3">
@@ -85,7 +129,9 @@ export const DayOne = () => {
             />
           </div>
           <div className="max-w-md">
-            <h2 className="text-2xl font-bold mb-2">Lat Pull Down</h2>
+            <h2 className="text-2xl font-bold mb-2">
+              Lat Pull Down (3 x 8-12)
+            </h2>
             <p className="text-gray-700">
               The lat pulldown is a pulling exercise that primarily targets the
               latissimus dorsi muscles (commonly known as “lats”) in your back.
@@ -96,7 +142,16 @@ export const DayOne = () => {
               different muscle groups in the back and arms. It is a popular
               exercise for building upper body strength and improving posture.
             </p>
+            <button
+              className="py-1 px-3 bg-[#A04747] text-white rounded-full my-3 "
+              onClick={() => setShowLatPullDownModal(true)}
+            >
+              See More
+            </button>
           </div>
+          {showLatPullDownModal && (
+            <LatPullDown onClose={() => setShowLatPullDownModal(false)} />
+          )}
         </div>
         <div className="flex flex-nowrap items-center gap-6 ">
           <div className="border-gray-300 border-2 rounded-xl overflow-hidden flex-shrink-0 my-3">
@@ -107,14 +162,25 @@ export const DayOne = () => {
             />
           </div>
           <div className="max-w-md">
-            <h2 className="text-2xl font-bold mb-2">Dips</h2>
+            <h2 className="text-2xl font-bold mb-2">
+              Dips (3 x Until Failure)
+            </h2>
             <p className="text-gray-700">
               A dip is an upper-body strength exercise. Close grip dips
               primarily train the triceps, with major synergists being the
               anterior deltoid, the pectoralis muscles, and the rhomboid muscles
               of the back.
             </p>
+            <button
+              className="py-1 px-3 bg-[#A04747] text-white rounded-full my-3 "
+              onClick={() => setShowDipsModal(true)}
+            >
+              See More
+            </button>
           </div>
+          {showDipsModal && (
+            <ChestDips onClose={() => setShowDipsModal(false)} />
+          )}
         </div>
       </div>
     </div>
