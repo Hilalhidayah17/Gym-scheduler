@@ -5,7 +5,7 @@ import { CableFlyModal } from "../seeMore/CableFlyModal";
 export const CableFly = () => {
   const [showCableFlyModal, setShowCableFlyModal] = useState(false);
   return (
-    <div className="flex flex-nowrap items-center gap-6  mt-6">
+    <div className="bg-white shadow-md rounded-xl p-6 flex gap-6 items-center">
       <div className="border-gray-300 border-2 rounded-xl overflow-hidden flex-shrink-0 my-3">
         <img
           src={CableFlyGif}
