@@ -8,6 +8,10 @@ import { DumbellShoulderPress } from "../components/exercise/DumbellShoulderPres
 import { LatPull } from "../components/exercise/LatPull.jsx";
 import { CableFly } from "../components/exercise/CableFly.jsx";
 import { LateralRaise } from "../components/exercise/LateralRaise.jsx";
+import { Squat } from "../components/exercise/Squat.jsx";
+import { LegCurl } from "../components/exercise/LegCurl.jsx";
+import { LegExtension } from "../components/exercise/LegExtension.jsx";
+import { StandinCalfRaise } from "../components/exercise/StandinCalfRaise.jsx";
 
 export const DayTwo = () => {
   const [showInclinePressModal, setShowInclinePressModal] = useState(false);
@@ -93,6 +97,23 @@ export const DayTwo = () => {
         </div>
         <div>
           <LateralRaise />
+        </div>
+      </div>
+      <div className="p-4">
+        <div className="w-full text-center">
+          <h2>Day 2</h2>
+        </div>
+        <div>
+          <Squat />
+        </div>
+        <div>
+          <LegCurl />
+        </div>
+        <div>
+          <LegExtension />
+        </div>
+        <div>
+          <StandinCalfRaise />
         </div>
       </div>
     </div>

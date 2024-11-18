@@ -9,7 +9,7 @@ export const LateralRaise = () => {
       <div className="border-gray-300 border-2 rounded-xl overflow-hidden flex-shrink-0 my-3">
         <img
           src={LateralRaiseGif}
-          alt="cable flies"
+          alt="Lateral Raises"
           className="rounded-xl w-[150px] h-auto lg:w-[200px]"
         />
       </div>

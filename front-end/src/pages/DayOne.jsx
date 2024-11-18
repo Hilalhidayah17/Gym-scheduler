@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "../components/navbar";
-import Squat from "../assets/Squat.gif";
+import SquatGif from "../assets/SquatGif.gif";
 import InclineChess from "../assets/incline_chess_press.gif";
 import OverHeadPress from "../assets/overhead_press.gif";
 import LatPull from "../assets/MAG_LAT_PULL_DOWN.gif";
@@ -25,7 +25,7 @@ export const DayOne = () => {
         <div className="flex flex-nowrap items-center gap-6">
           <div className="border-gray-300 border-2 rounded-xl overflow-hidden flex-shrink-0 my-3">
             <img
-              src={Squat}
+              src={SquatGif}
               alt="Squat"
               className="rounded-xl w-[150px] h-auto lg:w-[200px]"
             />
