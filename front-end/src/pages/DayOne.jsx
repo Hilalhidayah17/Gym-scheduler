@@ -9,7 +9,7 @@ import SquatModal from "../components/seeMore/SquatModal.jsx";
 import { InclineBarblePress } from "../components/seeMore/InclineBarblePress.jsx";
 import { DumblePress } from "../components/seeMore/DumblePress.jsx";
 import { LatPullDown } from "../components/seeMore/LatPullDown.jsx";
-import { ChestDips } from "../components/seeMore/Dips.jsx";
+import { ChestDips } from "../components/seeMore/DipsModal.jsx";
 
 export const DayOne = () => {
   const [showSquatModal, setShowSquatModal] = useState(false);

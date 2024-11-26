@@ -59,21 +59,21 @@ export default function Navbar() {
               Four
             </Link>
             <Link
-              to="/programs/2"
+              to="/programs/5"
               onClick={() => setSelectedOption("Five")}
               className="rounded-t bg-gray-200 hover:bg-gray-300 py-2 px-4 block whitespace-nowrap"
             >
               Five
             </Link>
             <Link
-              to="/programs/2"
+              to="/programs/6"
               onClick={() => setSelectedOption("Six")}
               className="rounded-t bg-gray-200 hover:bg-gray-300 py-2 px-4 block whitespace-nowrap"
             >
               Six
             </Link>
             <Link
-              to="/programs/2"
+              to="/programs/7"
               onClick={() => setSelectedOption("Seven")}
               className="rounded-t bg-gray-200 hover:bg-gray-300 py-2 px-4 block whitespace-nowrap"
             >
