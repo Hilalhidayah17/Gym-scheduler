@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "../components/navbar";
 import SquatGif from "../assets/SquatGif.gif";
-import InclineChess from "../assets/incline_chess_press.gif";
+import InclineChess from "../assets/Incline_chess_press.gif";
 import OverHeadPress from "../assets/overhead_press.gif";
 import LatPull from "../assets/MAG_LAT_PULL_DOWN.gif";
 import Dips from "../assets/Dips.gif";
