@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "../components/navbar";
 import { InclineBarblePress } from "../components/seeMore/InclineBarblePress.jsx";
-import InclineChess from "../assets/incline_chess_press.gif";
+import InclineChess from "../assets/Incline_chess_press.gif";
 import BentOverImg from "../assets/Bent_Over_Row.gif";
 import { BentOver } from "../components/seeMore/BentOver.jsx";
 import { DumbellShoulderPress } from "../components/exercise/DumbellShoulderPress.jsx";
