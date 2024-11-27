@@ -7,6 +7,8 @@ import { SelectedOptionProvider } from "./components/SelectedOptionContext";
 import { DayThree } from "./pages/DayThree";
 import { DayFour } from "./pages/DayFour";
 import { DayFive } from "./pages/DayFive";
+import { DaySix } from "./pages/DaySix";
+import { DaySeven } from "./pages/DaySeven";
 
 export default function App() {
   return (
@@ -18,6 +20,8 @@ export default function App() {
         <Route path="/programs/3" element={<DayThree />} />
         <Route path="/programs/4" element={<DayFour />} />
         <Route path="/programs/5" element={<DayFive />} />
+        <Route path="/programs/6" element={<DaySix />} />
+        <Route path="/programs/7" element={<DaySeven />} />
       </Routes>
     </SelectedOptionProvider>
   );

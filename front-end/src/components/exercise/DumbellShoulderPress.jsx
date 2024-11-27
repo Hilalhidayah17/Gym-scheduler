@@ -23,11 +23,7 @@ export const DumbellShoulderPress = () => {
           upper body. It involves lifting a pair of dumbbells from shoulder
           level to an overhead position, using the shoulders and arms.
         </p>
-        <p className="text-gray-700 mt-2">
-          The dumbbell shoulder press targets the shoulder muscles, specifically
-          the front deltoids. Dumbbells are easily accessible and can be used in
-          various settings, including home workouts and gym environments.
-        </p>
+
         <button
           className="py-1 px-3 bg-[#A04747] text-white rounded-full my-3 "
           onClick={() => setShowDumblePressModal(true)}

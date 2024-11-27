@@ -19,11 +19,7 @@ export const LatPull = () => {
           The lat pulldown is a pulling exercise that primarily targets the
           latissimus dorsi muscles (commonly known as “lats”) in your back. It
           involves pulling a cable bar or handle down towards your chest while
-          seated on a machine specifically designed for this exercise. The lat
-          pulldown is typically performed with a wide grip, but can also be done
-          with a narrow grip or underhand grip to target different muscle groups
-          in the back and arms. It is a popular exercise for building upper body
-          strength and improving posture.
+          seated on a machine specifically designed for this exercise.
         </p>
         <button
           className="py-1 px-3 bg-[#A04747] text-white rounded-full my-3 "

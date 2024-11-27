@@ -19,8 +19,7 @@ export const LegCurl = () => {
           The leg curl is an isolation exercise that targets the muscles of the
           back of the thigh, specifically the hamstrings. It is an effective
           exercise for developing strength, size, and muscular endurance in the
-          hamstrings. It is commonly performed using a leg curl machine found in
-          gyms or fitness centers.LegCurl
+          hamstrings.
         </p>
         <button
           className="py-1 px-3 bg-[#A04747] text-white rounded-full my-3 "

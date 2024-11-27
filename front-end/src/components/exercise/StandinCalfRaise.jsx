@@ -14,14 +14,11 @@ export const StandinCalfRaise = () => {
         />
       </div>
       <div className="max-w-md">
-        <h2 className="text-2xl font-bold mb-2">
-          Standing Calf Raise (4 x 8-12)
-        </h2>
+        <h2 className="text-2xl font-bold mb-2">Calf Raise (4 x 8-12)</h2>
         <p className="text-gray-700">
           The standing machine calf raise is an excellent exercise to use if you
           are interested in isolating the calves. In particular, the standing
-          machine calf raise targets the gastrocnemius muscle. The gastrocnemius
-          is better known as the “show” muscle of the calf.
+          machine calf raise targets the gastrocnemius muscle.
         </p>
         <button
           className="py-1 px-3 bg-[#A04747] text-white rounded-full my-3 "
