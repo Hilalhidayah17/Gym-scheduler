@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import InclineChess from "../../assets/incline_chess_press.gif";
+import InclineChess from "../../assets/Incline_chess_press.gif";
 import { InclineBarblePress } from "../../components/seeMore/InclineBarblePress.jsx";
 
 export const InclineBenchPress = () => {
