@@ -30,7 +30,7 @@ import { UHBentOver } from "../components/exercise/UHBentOver.jsx";
 
 export const DaySix = () => {
   return (
-    <div>
+    <div className="font-libre">
       <Navbar />
       <div className="p-4">
         <div className="text-center mb-6">

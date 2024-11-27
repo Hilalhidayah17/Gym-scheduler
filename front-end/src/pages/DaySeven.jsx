@@ -30,117 +30,108 @@ import { UHBentOver } from "../components/exercise/UHBentOver.jsx";
 
 export const DaySeven = () => {
   return (
-    <div className="bg-gray-100 min-h-screen">
+    <div className="font-libre">
       <Navbar />
-      <div className="max-w-7xl mx-auto p-6">
-        {/* Day 1 */}
-        <Section
-          title="Day 1 Push"
-          exercises={[
-            <InclineBenchPress />,
-            <DumbellShoulderPress />,
-            <LateralRaise />,
-            <Dips />,
-          ]}
-        />
-        {/* Day 2 */}
-        <Section
-          title="Day 2 Pull"
-          exercises={[
-            <PullUp />,
-            <BentOverRow />,
-            <ReversePeckDeck />,
-            <HammerCurl />,
-            <DbShrug />,
-            <SeatedCableRow />,
-          ]}
-        />
-        {/* Day 3 */}
-        <Section
-          title="Day 3 Legs"
-          exercises={[
-            <Deadlift />,
-            <Squat />,
-            <LegCurl />,
-            <StandinCalfRaise />,
-            <LegPress />,
-          ]}
-        />
-        {/* Day 4 */}
-        <RestDay
-          title="Day 4 Active Rest"
-          description={
-            <>
-              Choose jogging, cycling, or rowing. Aim for low-intensity,
-              long-duration cardio, keeping your heart rate at 60-75% of its
-              max. Time: 30-45 minutes. You can also play sports, but avoid
-              overly intense sessions.
-            </>
-          }
-        />
-        {/* Day 5 */}
-        <Section
-          title="Day 5 Push"
-          exercises={[
-            <InclineBenchPress />,
-            <CableFly />,
-            <SMPress />,
-            <CableLateral />,
-            <CablePushDown />,
-          ]}
-        />
-        {/* Day 6 */}
-        <Section
-          title="Day 6 Pull"
-          exercises={[
-            <LatPull />,
-            <SeatedCableRow />,
-            <OneArmPullDown />,
-            <ReversePeckDeck />,
-            <EzBarCurl />,
-          ]}
-        />
-        {/* Day 7 */}
-        <RestDay
-          title="Day 7 Mobility Workout"
-          description={
-            <>
-              A full-body mobility routine for recovery. Mobility training
-              improves joint range of motion, reduces muscle tension, enhances
-              posture, and promotes overall movement efficiency.
-            </>
-          }
-        />
+      <div className="p-4">
+        <div className="text-center mb-6">
+          <h2 className="text-3xl font-bold text-gray-800">Day 1 Push</h2>
+        </div>
+        <div className="grid gap-6 lg:grid-cols-2">
+          <InclineBenchPress />
+          <DumbellShoulderPress />
+          <LateralRaise />
+          <Dips />
+        </div>
+      </div>
+      <div className="p-4 ">
+        <div className="text-center my-8 ">
+          <h2 className="text-3xl font-bold text-gray-800">Day 2 Pull</h2>
+        </div>
+
+        {/* Exercises for Day 2 */}
+        <div className="grid gap-6 lg:grid-cols-2">
+          <PullUp />
+          <BentOverRow />
+          <ReversePeckDeck />
+          <HammerCurl />
+          <DbShrug />
+          <SeatedCableRow />
+        </div>
+      </div>
+      <div className="p-4">
+        <div className="text-center mb-6">
+          <h2 className="text-3xl font-bold text-gray-800">Day 3 LEGS</h2>
+        </div>
+
+        {/* Exercises for Day 2 */}
+        <div className="grid gap-6 lg:grid-cols-2">
+          <Deadlift />
+          <Squat />
+          <LegCurl />
+          <StandinCalfRaise />
+          <LegPress />
+        </div>
+      </div>
+      <div className="p-4">
+        <div className="bg-white shadow-md rounded-xl p-6 flex gap-6 items-center">
+          <h2 className="text-3xl font-bold text-gray-800">
+            Day 4 Active Rest
+          </h2>
+          <p>
+            Choose jogging, cycling, or rowing. The goal is to do low intensity
+            long duration cardio, which means after your cardio session you
+            should be comfortably tired, not exhausted lying in a pile of sweat
+            on the floor, or in other words, aim for 60-75% of your max heart
+            rate consistently for the length of the cardio session. Length of
+            time: 30-45 minutes (up to as much as 60 minutes is ok, no more than
+            that). If you play a sport, you can also opt to do that sport on
+            this day (i.e. pick up basketball game). However, an intense game
+            can end up being too taxing on the body, so proceed with caution.
+          </p>
+        </div>
+      </div>
+      <div className="p-4">
+        <div className="text-center mb-6">
+          <h2 className="text-3xl font-bold text-gray-800">Day 5 Push</h2>
+        </div>
+
+        <div className="grid gap-6 lg:grid-cols-2 ">
+          <InclineBenchPress />
+          <CableFly />
+          <SMPress />
+          <CableLateral />
+          <CablePushDown />
+        </div>
+      </div>
+      <div className="p-4">
+        <div className="text-center mb-6">
+          <h2 className="text-3xl font-bold text-gray-800">Day 6 Pull</h2>
+        </div>
+
+        {/* Exercises for Day 2 */}
+        <div className="grid gap-6 lg:grid-cols-2 ">
+          <LatPull />
+          <SeatedCableRow />
+          <OneArmPullDown />
+          <ReversePeckDeck />
+          <EzBarCurl />
+        </div>
+      </div>
+      <div className="p-4">
+        <div className="bg-white shadow-md rounded-xl p-6 flex gap-6 items-center">
+          <h2 className="text-3xl font-bold text-gray-800">
+            Day 7 Mobility Workout
+          </h2>
+          <p>
+            You are going to do a full body mobility routine to end the week.
+            This is essentially an active recovery day. Mobility training is
+            going to give you a greater joint range of motion and freedom of
+            movement, decrease your risk of injury, reduce muscle tension and
+            soreness, improve your posture and movement efficiency, and increase
+            your overall coordination and energy levels.
+          </p>
+        </div>
       </div>
     </div>
   );
 };
-
-const Section = ({ title, exercises }) => (
-  <div className="mb-12">
-    <h2 className="text-4xl font-bold text-gray-800 border-b-4 border-red-500 pb-2 mb-6 text-center">
-      {title}
-    </h2>
-    <div className="grid gap-6 sm:grid-cols-1 lg:grid-cols-2">
-      {exercises.map((exercise, index) => (
-        <div
-          key={index}
-          className="p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300"
-        >
-          {exercise}
-        </div>
-      ))}
-    </div>
-  </div>
-);
-
-const RestDay = ({ title, description }) => (
-  <div className="mb-12">
-    <h2 className="text-4xl font-bold text-gray-800 border-b-4 border-blue-500 pb-2 mb-6 text-center">
-      {title}
-    </h2>
-    <div className="p-6 bg-blue-50 rounded-xl shadow-md">
-      <p className="text-gray-700 leading-relaxed text-lg">{description}</p>
-    </div>
-  </div>
-);

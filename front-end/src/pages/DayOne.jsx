@@ -19,7 +19,7 @@ export const DayOne = () => {
   const [showDipsModal, setShowDipsModal] = useState(false);
 
   return (
-    <div className="h-[100vh] ">
+    <div className="h-[100vh] font-libre">
       <Navbar />
       <div className="p-4">
         <div className="flex flex-nowrap items-center gap-6">

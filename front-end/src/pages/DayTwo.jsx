@@ -18,7 +18,7 @@ export const DayTwo = () => {
   const [showBentOverModal, setShowBentOverModal] = useState(false);
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 font-libre">
       <Navbar />
       <div className="p-4">
         {/* Day 1 Section */}

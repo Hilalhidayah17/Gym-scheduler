@@ -23,7 +23,7 @@ import { LegPress } from "../components/exercise/LegPress.jsx";
 
 export const DayFive = () => {
   return (
-    <div>
+    <div className="font-libre">
       <Navbar />
       <div className="p-4">
         <div className="text-center mb-6">

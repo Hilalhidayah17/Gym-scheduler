@@ -18,7 +18,7 @@ import { HammerCurl } from "../components/exercise/HammerCurl.jsx";
 
 export const DayThree = () => {
   return (
-    <div>
+    <div className="font-libre">
       <Navbar />
       <div className="p-4">
         <div className="text-center mb-6">
